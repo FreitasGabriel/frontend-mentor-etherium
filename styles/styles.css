@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Outfit';
+
+    /* outline: 1px solid limegreen; */
+}
+
+:root{
+    --nft-color__blue-dark: hsl(217, 54%, 11%);
+    --nft-color__blue-medium: hsl(216, 50%, 16%);
+    --nft-color__blue-soft: hsl(215, 32%, 27%);
+    --nft-color__soft-blue: hsl(215, 51%, 70%);
+    --nft-color__cyan:hsl(178, 100%, 50%);
+    --nft-color__white:hsl(0, 0%, 100%);
+}
+
+.nft{
+    background-color: var(--nft-color__blue-dark);
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nft-card{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 327px;
+    height: 543px;
+    background-color: var(--nft-color__blue-medium);
+
+    border-radius: 16px;
+
+    padding: 24px;
+}
+
+.nft-card__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-card__header img{
+    width: 278px;
+    height: 278px;
+
+    border-radius: 8px;
+}
+
+.nft-card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 24px 0;
+}
+
+.nft-card-body .nft-card-body__heading{
+    color: var(--nft-color__white);
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 27px;
+}
+
+.nft-card-body .nft-card-body__paragraph{
+    color: var(--nft-color__soft-blue);
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 26px;
+    padding: 12px 0;
+}
+
+.nft-card-body__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nft-card__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.nft-card__price{
+    color: var(--nft-color__cyan);
+}
+
+.nft-card__price-text{
+    margin-left: 5px;
+}
+
+
+.nft-card__date{
+    color: var(--nft-color__soft-blue);
+
+}
+.nft-card__date-text{
+    margin-left: 5px;
+}
+
+.nft-card-line{
+    border: 1ps solid #FFF;
+    border-color: var(--nft-color__blue-soft);
+}
+
+.nft-card__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    margin: 12px 0;
+}
+
+.nft-card__footer img{
+    width: 33px;
+    height: 33px;
+}
+
+.nft-card__footer-text{
+    margin-left: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: var(--nft-color__soft-blue);
+}
+
+.nft-card__footer-text strong{
+    color: var(--nft-color__white);
+}
